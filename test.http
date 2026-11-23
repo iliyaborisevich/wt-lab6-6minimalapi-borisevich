@@ -1,0 +1,29 @@
+### 1. Получить все авто (200 OK)
+GET https://wt-lab6-6minimalapi-borisevich.onrender.com/api/cars
+
+### 2. Добавить новое авто (201 Created)
+POST https://wt-lab6-6minimalapi-borisevich.onrender.com/api/cars
+Content-Type: application/json
+
+{
+  "brand": "Ford",
+  "model": "Focus",
+  "year": 2021,
+  "pricePerDay": 60,
+  "isAvailable": true
+}
+
+### 3. Изменить авто (200 OK)
+PUT https://wt-lab6-6minimalapi-borisevich.onrender.com/api/cars/1
+Content-Type: application/json
+
+{
+  "brand": "Toyota",
+  "model": "Camry",
+  "year": 2022,
+  "pricePerDay": 99,
+  "isAvailable": false
+}
+
+### 4. Удалить авто (204 No Content)
+DELETE https://wt-lab6-6minimalapi-borisevich.onrender.com/api/cars/2
